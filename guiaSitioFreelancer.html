@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preload" href="CSS/normalize.css" as="style">
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="CSS/style.css" as="style">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+  <h1 class="titulo">Guia HTML/CSS PARA SITIO FREELANCER</h1>
+  <h2 class="contenedor"><u>CREANDO LOS TEXTOS CON HTML</u></h2>
+  <p>Lo primero sera usar un atajo para crear la estructura basica de html osea el esqueleto, eso lo puedo hacer
+    apretando el signo de esclamacion y luego tab o bien escribiendo html:5 y tab: </p>
+  <p class="codigo">1: ! + tecla TAB</p>
+  <p class="codigo">2: escribir html:5 + tecla tab</p>
+  <p>La primera linea que dice &lt;!DOCTYPE html&gt; hace referencia a que se esta usando la ultima version de html</p>
+  <p>El &lt;html lang="en"&gt; hace referencia al idioma en que esta el proyecto en este caso lo cambio a &lt;html
+    lang="es"&gt;</p>
+  <p>El &lt;head&gt; es toda la parte del codigo que le da informacion al navegador</p>
+  <p>El &lt;meta charset="UTF-8"&gt; es un encoding que le dice al navegador que se van a utilizar acentos y caracteres
+    especiales</p>
+  <p>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; y &lt;link rel="stylesheet"
+    href="style.css"&gt; es informacion para el navegador</p>
+  <p>&lt;title&gt; es el titulo de mi pagina web de la pestaña es informacion util para el SEO</p>
+  <h2 class="contenedor"><u>ESTRUCTURAR CONTENIDO EN HTML</u></h2>
+  <div class="foto">
+  </div>
+
+  <p>A la foto anterior recordar que el 'main content' tiene una etiqueta llamada 'main'</p>
+  <h2 class="contenedor"><u>CREANDO ENLACES Y NAVEGACION</u></h2>
+  <p class="codigo">ETIQUETA: &lt;a href="enlace.html"&gt; </p>
+  <h2 class="contenedor"><u>FORMULARIOS</u></h2>
+  <p>Se emplea de esta forma:<br><br> </p>
+   <p class="codigo"> &lt;seccion&gt;<br>&lt;h2&gt;Contacto&lt;/h2&gt;<br>&lt;form&gt;<br>&lt;fielset&gt;<br>&lt;legend&gt;Contactanos
+    llenando todos los campos&lt;/legend&gt;<br>&lt;div&gt;<br>&lt;label&gt;Nombre&lt;/label&gt;<br>&lt;input
+    type="text" placeholder="Tu Nombre"&gt;<br>
+    &lt;/div&gt;<br>&lt;div&gt;<br>&lt;label&gt;Telefono&lt;/label&gt;<br>&lt;input type="tel" placeholder="Tu
+    Telefono"&gt;<br>
+    &lt;/div&gt;<br>&lt;div&gt;<br>&lt;label&gt;Correo&lt;/label&gt;<br>&lt;input type="email" placeholder="Tu
+    Email"&gt;<br>
+    &lt;/div&gt;<br>&lt;div&gt;<br>&lt;label&gt;Mensaje<&lt; /label&gt;<br>&lt;textarea&gt;<&lt; /textarea&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;div&gt;<br>&lt;input type="submit"
+        value="Enviar"&gt;<br>&lt;/div&gt;<br>&lt;/fielset&gt;<br>&lt;/form&gt;<br>
+        &lt;/seccion&gt;<br> </p>
+        <h2 class="contenedor"><u>INTRODUCCION A CSS -EL ROL DE CSS-</u></h2>
+        <p><br><u>CSS se encarga de: </u><br><br>Tamaños y tipos de fuente <br> Colores <br> Espacios <br> Margenes <br>
+          Adaptar diseños a distintos dispositivos <br> Animaciones <br> y mucho mas..... <br><br></p>
+        <p><u>Crear un archivo externo para CSS</u></p>
+        <p><br>Usar en el &lt;head&gt; la etiqueta link: <br><br> </p> <p class="codigo"> &lt;link rel="stylesheet" href="style.css"&gt; </p>
+        <p>Y para que la carga de la pagina sea mas rapida usar: <br><br> </p> <p class="codigo">&lt;link rel="preload" href="style.css"
+          as="style"&gt; </p>
+
+        <h2 class="contenedor"><u>ESTILOS A NUESTRO PROYECTO</u></h2>
+        <p><br><u>Pequeño hack para hacer rendir a los rem <br></u></p>
+        <p class="codigo">html { <br>font-size: 62.5%; <br> } <br> body{ <br> font-size: 16px; <br> } <br> </p>
+
+        <h2 class="contenedor"><u>INTRODUCCION A SELECTORES CSS</u></h2>
+        <p><br><u>Selector de elemento <br></u></p>
+        <p class="codigo">p { <br> color: blue; <br> } <br></p>
+        <p><br><u>Selector de clase <br></u></p>
+        <p class="codigo">.cliente { <br> color: blue; <br> } <br></p>
+        <p>-Una clase se puede crear multiples veces (es reutilizable) e inicia con un punto. <br></p>
+        <p><br><u>Selector de ID <br></u></p>
+        <p class="codigo">#cliente { <br> color: blue; <br> } <br></p>
+        <p>-Puedes tener multiples ID`s por pagina pero sus nombres no pueden repetirse. <br></p>
+        <p><br><u>Selector de Atributo <br></u></p>
+        <p class="codigo">[src="logo.jpg"] { <br> color: blue; <br> } <br></p>
+        <p>-Selecciona elementos basado en algun atributo que tenga. <br></p>
+        <p><br><u>Combinacion de descendentes <br></u></p>
+        <p class="codigo">.cliente .nombre { <br> color: blue; <br> } <br></p>
+        <p>-Selecciona los elementos hijos cuyos padre sea una clase (o ID) es especifico. <br></p>
+        <p><br><u>Todos los hijos <br></u></p>
+        <p class="codigo">.cliente &gt; p { <br> color: blue; <br> } <br></p>
+        <p>-Aplica a todos los hijos. <br></p>
+
+        <h2 class="contenedor"><u>ESPECIFICIDAD EN CSS</u></h2>
+        <p><br><u>¿Que valores del CSS seran tomados en cuenta por el navegador? <br></u></p>
+        <p><br><u>¿Que es la especificidad? <br></u></p>
+        <p>Es como el navegador va a mostrar el CSS de acuerdo a que tan especifico es el selector que hemos creado.</p>
+        <p>CSS es en cascada, eso no significa que si un selector aparece despues sera tomado en cuenta sino mas bien su
+          especificidad</p>
+        <p>-como ultima opcion puedes usar la palabra "important" pero no es recomendable </p>
+        <p class="codigo">p { <br>color: blue!important; <br> } </p>
+
+        <h2 class="contenedor"><u>COLORES EN CSS</u></h2>
+        <p>Existen: Hex, nombre, hsl, rgb........</p>
+
+        <h2 class="contenedor"><u>AÑADIR FUENTES EXTERNAS</u></h2>
+        <p>Buscar una fuente por ejemplo en google font, y en el &lt;head&gt; implementar por ejemplo este estilo de
+          fuente:</p>
+        <p class="codigo">&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;&lt;link rel="preconnect"
+          href="https://fonts.gstatic.com" crossorigin&gt;&lt;link
+          href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet"&gt; <br></p>
+        <h2 class="contenedor"><u>AÑADIENDO NORMALIZE CSS</u></h2>
+        <p>-Añadir en un documento CSS nuevo el codigo descargado en este link y luego en el HTML agregar un link a ese
+          documento.</p>
+        <p>-Este documento CSS debe ser el primero en cargar de todos los links que tenga el html, ademas es buena idea
+          hacer un preload de normalize.css.</p>
+
+        <h2 class="contenedor"><u>FLEXBOX</u></h2>
+        <p>-Flexbox fue diseñado como un modelo unidimensional para crear layouts</p>
+        <p><u>Los dos ejes de Flexbox:</u></p>
+        <p>En Flexbox solo puedes colocar y distribuir tus elementos en una dirección fila (row) o columna (column). Row
+          es aplicado por default al definir un display: flex; Los otros valores son row-reverse, column y
+          column-reverse. <br> Si elegimos row o row-reverse os elementos hijos se colocarán de izquierda a derecha uno
+          junto al otro.<br>Al elegir column o column-reverse los elementos se colocarán de arriba hacia
+          abajo.<br>Flexbox es especialmente diseñado para alinear elementos en tus diseños.<br>No añade efectos de
+          animación, ni textos, es una tecnología utilizada únicamente para los layouts y sustituye a los floats o
+          table-cell</p>
+        <h2 class="contenedor"><u>ESTILOS PARA ESCRIBIR CODIGO EN CSS - BEM, MUDULOS Y UTILIDADES</u></h2>
+        <P>-Diferentes estilos para escribir CSS: BEM, Utility First o Módulos</P>
+
+        <h2 class="contenedor"><u>EVENTOS EN CSS O SEUDOCLASES</u></h2>
+        <p>-Por ejemplo puedo hacer que el enlace cambie de color y darle un aspecto de boton cuando paso el mouse por
+          el de la siguiente manera por ejemplo:</p>
+        <p class="codigo">.navegacion-principal a:hover{<br>background-color: var(--primario);<br>color: var(--oscuro);<br>}<br></p>
+        <p>-El :hover hace ese tipo de animacion, hay otros mas y se implementan con el : siempre.</p>
+
+        <h2 class="contenedor"><u>RESPONSIVE WEB DESIGN Y MEDIA QUERIES</u></h2>
+        <P>-Se inplementa de la siguiente forma dependiendo del tamaño en pixeles de la pantalla. Ejemplo:</P>
+        <p class="codigo">@media(min-width:480px){ /* TELEFONO */ <br>.navegacion-principal{ <br>flex-direction: row;
+          <br>justify-content: space-between; <br>}<br>
+        </p>
+
+        <h2 class="contenedor"><u>¿Que es CSS Box Model?</u></h2>
+        <p>-El tamaño de lo que se muestra en pantalla esta delimiado por 4 cosas: <br>* Tamaño de contenido. <br> *
+          Tamaño de relleno (Padding). <br> Tamaño del borde y el margen. <br></p>
+
+        <p>-Un truco que se puede utilizar para que al momento de darle un width a tu foto, esta no le afecte el padding
+          o el border, es usar este codigo. <br></p>
+
+        <p>html { <br> font-size: 62.5%; <br> box-sizing: border-box; <br> } <br> *, <br> *:before, <br> box-sizing:
+          inherit; <br> } <br></p>
+
+          <h2 class="contenedor"><u>Comentar el codigo HTML y en CSS</u></h2>
+          <p class="codigo">-En HTML se comenta de esta forma: <br> &lt;!-- contenido del comentario --&gt; <br></p>
+          <p class="codigo">-En CSS se usa: /* un comentario */ <br></p>
+</body>
+
+</html>

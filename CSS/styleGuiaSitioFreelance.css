@@ -1,0 +1,48 @@
+:root{
+    
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 16px;
+  background: #BDbdbd;
+  font-family: 'Lora', serif;
+}
+
+.titulo{
+  text-align: center;
+  color:#cc0000;
+  background-color: black;
+  padding: 0.5rem;
+}
+
+h2{
+  text-align: center;
+  color: #0f0f0f;
+  background-color: rgb(243, 9, 9);
+}
+
+.contenedor{
+  width: 50rem;
+  margin: 0 auto 0 auto;
+  padding: 0.5rem;
+}
+
+.foto {
+
+  background-image: url(../IMG/EstructuraHTML5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  width: 1000px;
+  margin: 20px;
+ /* padding: 20px;*/
+  
+}
+
+.codigo{
+  text-align: center;  
+}
