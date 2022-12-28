@@ -1,0 +1,35 @@
+html{
+  
+  background: pink ;
+}
+
+
+h1{
+  text-align: center;
+}
+
+.foto{
+    display: flex;
+  flex-direction: row;
+    justify-content: center;
+  background-size: cover;
+  
+padding: 5px;
+}
+
+
+.f1{
+ width:200px;
+  height: 200px;  
+   background-image: url(LairaCampeona.jpg);
+  background-size: cover;
+
+}
+
+.f2{
+ width:200px;
+  height: 200px;
+   background-image: url(descarga.jpeg); 
+  background-size: cover;
+
+}
