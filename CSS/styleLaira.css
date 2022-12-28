@@ -9,12 +9,11 @@ h1{
 }
 
 .foto{
-    display: flex;
-  flex-direction: row;
+    display: flex; 
     justify-content: center;
-  background-size: cover;
-  
+  /*background-size: cover;*/  
 padding: 5px;
+background-color: rgb(183, 125, 236);
 }
 
 
@@ -22,8 +21,8 @@ padding: 5px;
  width:200px;
   height: 200px;  
    background-image: url(/img/LairaCampeona.jpg);
-  background-size: cover;
-
+  background-size: cover; 
+  margin-right: 10px;
 }
 
 .f2{
@@ -31,5 +30,4 @@ padding: 5px;
   height: 200px;
    background-image: url(/img/descarga.jpeg); 
   background-size: cover;
-
 }
