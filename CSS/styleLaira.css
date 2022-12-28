@@ -21,7 +21,7 @@ padding: 5px;
 .f1{
  width:200px;
   height: 200px;  
-   background-image: url(LairaCampeona.jpg);
+   background-image: url(/img/LairaCampeona.jpg);
   background-size: cover;
 
 }
@@ -29,7 +29,7 @@ padding: 5px;
 .f2{
  width:200px;
   height: 200px;
-   background-image: url(descarga.jpeg); 
+   background-image: url(/img/descarga.jpeg); 
   background-size: cover;
 
 }
