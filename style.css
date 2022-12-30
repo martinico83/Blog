@@ -2,3 +2,105 @@ html, body {
   height: 100%;
   width: 100%;
 }
+
+.cabezera {
+    position: relative;
+    width: 50%;
+    height: 30%;
+    border-radius: 10px;
+    border: 3px solid black;
+    display: flex;  
+    margin: 0 0 0 350px;
+    background-color: rgb(197, 223, 240);
+    background-size: cover;
+}
+
+.titulo{
+  text-align:center;
+}
+
+.navegacion-principal {
+    background-color: grey;
+    max-width: 120rem;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.navegacion-principal a {
+  height: 20px;
+  width:max-content;
+  background-color: lightblue;
+  background-size: cover;
+  text-align: center;
+  align-items: center;
+  margin:10px 0 10px 0 ;
+  padding:20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navegacion-principal a:hover{
+    background-color: lightcoral;
+    color: blue;
+}
+
+@media (max-width: 768px) {
+
+.cabezera{
+  margin: auto;
+  width: 100%;
+}
+  
+.img1{
+  
+  height: 100%;
+  width: 100%;
+}
+  .img2{
+      height: 100%;
+  width: 100%;
+  }
+  
+      .cabezera{
+        justify-content: center;
+      flex-direction: column;
+        height: fit-content;
+    }  
+  
+  
+    .navegacion-principal {
+        flex-direction: column;
+    }
+
+    .navegacion-principal a {
+      height: 20px;
+  width:80%;
+      margin:10px;
+      background-color: lightblue;
+ background-size: cover;
+  text-align: center;
+  align-items: center;
+  padding:20px;
+      
+    }
+
+}
+
+
+.principal {
+    height: 300px;
+    width: 100%;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.principal h2{    
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.footer{
+    text-align: center;
+}
