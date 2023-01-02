@@ -49,26 +49,30 @@ html, body {
 @media (max-width: 768px) {
 
 .cabezera{
+  display:flex;
+  flex-direction: column;
   margin: auto;
-  width: 100%;
-}
-  
-.img1{
-  
-  height: 100%;
-  width: 100%;
-}
-  .img2{
-      height: 100%;
-  width: 100%;
-  }
-  
-      .cabezera{
+  width: 70%;
+  height: fit-content;
         justify-content: center;
-      flex-direction: column;
-        height: fit-content;
-    }  
+  background-color: lightblue;
+}
   
+  
+ .cabezera .img1{
+  height: auto;
+  width: auto;
+  margin:auto;
+}
+  .cabezera .img2{
+    height: auto;
+    width: auto;
+    margin:auto;
+  }
+
+  .titulo{
+    text-align: center;    
+  }  
   
     .navegacion-principal {
         flex-direction: column;
