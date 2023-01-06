@@ -96,6 +96,37 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     color: red;
 }
 
+.intereses{
+  display: grid;
+  grid: 200px 200px 200px / 300px 300px;
+  column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  padding: auto;
+  margin: 0px 200px 0px 200px;
+     border: 3px solid black;
+  border-radius: 10px;
+  height: 50%;
+  background-color: black;  
+}
+
+.intereses .iconos{   
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: auto;
+  width: 150px;
+  height: 150px;  
+  border: 3px solid brown;
+  color: white;
+  border-radius: 50%;
+}
+
+
+
+
 @media(max-width: 959px){
   .caja-martin{    
     flex-wrap: wrap;
@@ -124,4 +155,29 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 .navegacion-principal a{
 margin:20px auto auto auto;
   }
+
+  .intereses{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    margin: 20px auto auto auto;
+    background-color: black;  
+     }
+
+    .iconos{
+    margin: 20px;
+      padding:20px;
+      text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .intereses .iconos{
+    margin: 10px;
+  }
+
 }
