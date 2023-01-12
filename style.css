@@ -1,13 +1,3 @@
-/*html, body {
-  height: 100%;
-  width: 100%;
-}*/
-:root{
-  --primario:#7d6b7b;
-  --secundario:#046c7d;
-}
-
-
 body{
   background-image: linear-gradient(to top, white 30%, lightblue 100%);
 }
@@ -19,183 +9,235 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 .titulo-principal{
-  text-align: center;
-  text-transform: uppercase;
-  color:black;
-   border: 3px solid black;
+  border: 5px solid black;
+  background-color: #EDBB99;
   border-radius: 10px;
-  background-color: var(--primario);
-  margin: auto;
-  width: 95%;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+  
 }
 
-.caja-martin{
+.caja-Martin img{
+  width: 300px;
+  height: 300px;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 50%;
+}
+
+.caja-Martin{
   position: relative;
-  background-image: url(/img/bandera.jpg);
-  background-size: contain;
-  background-repeat: inherit;
-  display: flex;
-  width: 95%;
-  justify-content: center;
-  border: 3px solid black;
+  border: 5px solid black;
   border-radius: 10px;
-  height: 400px;
-  margin: 50px auto auto auto;
+  background-image: url(/img/sierra.jpg);
+  background-size: cover;
+ display: flex;
+  justify-content: center;
+  width: 100%;    
+  margin: 0 auto;
 }
 
-
-
-.caja-martin > img{
-  margin: 40px;
-}
-
-.caja-martin .img3{
-  width: 240px;
-}
-
-.caja-back{
-  position: absolute;
-  background-color: rgba(0, 0, 0, .6);
-  background-color: rgb(0 0 0/50%);
-  width: 100%;
-  height: 100%;
-}
-
-.titulo-martin{
+.titulo-Martin{
   position: absolute;
   text-transform: uppercase;
-  color:black;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
-  margin:10px 0px 0px 0px;  
-  border: 3px solid black;
-  border-radius: 10px;
-  background-color:var(--primario);
+margin-top: 10px;
 }
 
-.navegacion-principal {
-    background-color:var(--primario);
-    width: 95%;
-    margin: 20px;
+.navegacion-principal{
+  display: flex;
+   border: 5px solid black;
   border-radius: 10px;
-  border: 3px solid black;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+  background-color:#EDBB99;
+  justify-content:space-evenly;
+  margin: 20px auto;
 }
 
-.navegacion-principal a {
-  height: 20px;
-  width:max-content;
-  background-color: grey;
- /* background-size: cover; */
-  text-align: center;
-  align-items: center;
-  margin:10px 0 10px 0 ;
+.navegacion-principal a{
+  border: 5px solid black;
   border-radius: 10px;
-  padding:20px;
-    text-transform: uppercase;
-    text-decoration: none;
- color: black;
-  }
+  background-color: #b695c0;
+  margin: 20px auto;
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  
+}
 
 .navegacion-principal a:hover{
-    background-color: var(--secundario);
-    color: black;
+  background-color: lightblue;
+  border: 5px solid red;
+  color: black;
 }
 
 .intereses{
   display: grid;
-  grid: 200px 200px 200px / 300px 300px;
-  column-gap: 20px;
+  grid: auto 300px 300px / 300px 300px;
+  column-gap: 20px; 
+  width: 70%;
+  margin: 0 auto;
+  border: 5px solid black;
+  border-radius: 10px;
+  background-color: #A2D9CE  ;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-  padding: auto;
-  margin: 0px 200px 0px 200px;
-     border: 3px solid black;
-  border-radius: 10px;
-  height: 50%;
-  background-color: var(--primario);  
 }
 
-.intereses .iconos{   
-  margin: auto;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: auto;
-  width: 150px;
-  height: 150px;  
-  border: 3px solid brown;
-  color: black;
-      background-color: var(--secundario);
+.iconos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+   border: 5px solid black;
+  border-radius: 50%;
+  padding-top: 20px;
+  margin: 20px;
+  padding-bottom: 20px;
+  background-color: #b695c0;  
+}
 
+.iconos:nth-child(1){
+  grid-column: 1/3;
+  border-radius: 50%;
+}
+
+.contenedor.form {
+  max-width: 120rem;
+  margin: 0 auto 0 auto;
+}
+
+.titulo-formulario{
+  text-align: center;
+}
+
+.formulario{
+  background-color: grey;
+  width: min(600px, 100%);
+  margin: 0 auto;
+  padding:20px;
+  border-radius: 10px;
+}
+
+.formulario fieldset{
+  border: none;
+}
+
+.formulario legend{
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.contenedor-campos{
+  
+}
+
+.campo{
+  margin-bottom: 10px;
+}
+
+.campo label{
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: #b904b9;
+  display: block;
+}
+
+.input-text{
+  width: 95%;
+  margin: 0 auto;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.boton {
+  background-color: #b695c0;
+  color:black;
+  padding: 1rem 3rem;
+  margin-top: 3rem ;
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: .5rem;
+  width: 90%;
+  text-align: center;
+  border: 5px solid black;
+}
+
+.boton:hover{
+  background-color: lightblue;
+  border: 5px solid red;
+  color: black;
+  cursor: pointer;
+}
+
+.enviar .boton{
+  width: 100%;  
+}
+
+.campo textarea{
+  height: 200px;
+}
+
+@media(max-width:907px){
+  .intereses{
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+  .iconos{
+    padding: 30px;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+  }
+
+  .iconos svg{
+    height: 50px;
+    width: 50px;
+    margin: 0px;
+  }
+
+  .iconos p{
+    text-transform: uppercase;
+    margin: 0px;
+  } 
+
+  .caja-Martin{
+    flex-wrap: wrap;
+    align-items: center;
+    height: fit-content;
+  }
+
+  .caja-Martin img{
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  margin-top: 5px;
   border-radius: 50%;
 }
 
 
-
-
-@media(max-width: 959px){
-  .caja-martin{    
-    flex-wrap: wrap;
-    height: fit-content;
-    
+  .titulo-Martin{
+    position: relative;   
+      text-align: center;
   }
-
-  .caja-martin > img{
-    width: 150px;
-    height: 150px;    
-    margin: 20px auto 20px auto;
-    }
-  
-    .titulo-martin{
-     justify-content:center;
-      align-items: center;
-      margin: 150px 0px 0px 0px;
-      
-    }
 
   .navegacion-principal{
     flex-direction: column;
-     align-items: center;
-  justify-content: center;
-    width: auto;
-    margin: 10px ;
-  }
-.navegacion-principal a{
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  width: 95%;
-margin:10px;
   }
 
-  .intereses{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 95%;
-    height: fit-content;
-    margin: 20px auto auto auto;
-    background-color:var(--primario);  
-     }
-
-    .iconos{
-    margin: 20px;
-      padding:20px;
-      text-align: center;
-    justify-content: center;
-    align-items: center;
-    color: white;
+  .navegacion-principal a{
+    margin: 5px;
   }
 
-  .intereses .iconos{
-    margin: 10px;
+  .formulario{
+    width: fit-content;
   }
-
 }
